@@ -1,0 +1,23 @@
+package basics;
+
+public class Staticmethod {
+	public static void method1() {
+		System.out.println("We are from 82r batch");
+	}
+	public void method2() {
+		System.out.println("We are learning java currently");
+	}
+	public void method3() {
+		method1();
+		Staticmethod obj1=new Staticmethod();
+		obj1.method2();
+		System.out.println("We also learn SQL daily");
+	}
+
+	public static void main(String[] args) {
+		Staticmethod obj2=new Staticmethod();
+		obj2.method3();
+
+	}
+
+}
